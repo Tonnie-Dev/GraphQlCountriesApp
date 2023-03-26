@@ -1,4 +1,4 @@
-package com.plcoding.graphqlcountriesapp.domain
+package com.plcoding.graphqlcountriesapp.domain.model
 
 data class DetailedCountry(
     val code: String,

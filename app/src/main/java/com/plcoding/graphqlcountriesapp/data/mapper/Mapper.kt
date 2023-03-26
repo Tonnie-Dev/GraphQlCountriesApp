@@ -2,10 +2,10 @@ package com.plcoding.graphqlcountriesapp.data.mapper
 
 import com.plcoding.CountriesQuery
 import com.plcoding.CountryQuery
-import com.plcoding.graphqlcountriesapp.domain.DetailedCountry
-import com.plcoding.graphqlcountriesapp.domain.SimpleCountry
+import com.plcoding.graphqlcountriesapp.domain.model.DetailedCountry
+import com.plcoding.graphqlcountriesapp.domain.model.SimpleCountry
 
-fun CountryQuery.Country.toDetailedCountry():DetailedCountry{
+fun CountryQuery.Country.toDetailedCountry(): DetailedCountry {
 
     return DetailedCountry(
             code = this.code    ,
@@ -18,7 +18,7 @@ fun CountryQuery.Country.toDetailedCountry():DetailedCountry{
     )
 }
 
-fun CountriesQuery.Country.toSimpleCountry():SimpleCountry = SimpleCountry(
+fun CountriesQuery.Country.toSimpleCountry(): SimpleCountry = SimpleCountry(
         code = this.code,
         name = this.name,
         emoji = this.emoji,

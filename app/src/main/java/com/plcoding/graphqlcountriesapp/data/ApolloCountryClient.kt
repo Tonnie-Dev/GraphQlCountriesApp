@@ -6,8 +6,8 @@ import com.plcoding.CountryQuery
 import com.plcoding.graphqlcountriesapp.data.mapper.toDetailedCountry
 import com.plcoding.graphqlcountriesapp.data.mapper.toSimpleCountry
 import com.plcoding.graphqlcountriesapp.domain.CountryClient
-import com.plcoding.graphqlcountriesapp.domain.DetailedCountry
-import com.plcoding.graphqlcountriesapp.domain.SimpleCountry
+import com.plcoding.graphqlcountriesapp.domain.model.DetailedCountry
+import com.plcoding.graphqlcountriesapp.domain.model.SimpleCountry
 
 class ApolloCountryClient(private val apolloClient: ApolloClient) : CountryClient {
 
