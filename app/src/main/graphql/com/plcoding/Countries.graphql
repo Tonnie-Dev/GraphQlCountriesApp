@@ -1,4 +1,4 @@
-query Countries{
+query CountriesQuery{
 
     countries {
         name

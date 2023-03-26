@@ -1,4 +1,4 @@
-query County($country_code:ID!){
+query CountryQuery($country_code:ID!){
 
     country(code: $country_code) {
         code
