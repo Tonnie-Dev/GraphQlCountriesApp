@@ -30,4 +30,13 @@ class CountriesViewModel(
             _state.update { it.copy(countries = getCountriesUseCase.execute(), isLoading = false) }
         }
     }
+
+
+    fun selectCountry(code: String) {
+
+        viewModelScope.launch {
+
+            _state.update { it.copy(selectedCountry = getCountryUseCase.execute(code)) }
+        }
+    }
 }
