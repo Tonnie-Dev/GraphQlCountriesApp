@@ -39,4 +39,10 @@ class CountriesViewModel(
             _state.update { it.copy(selectedCountry = getCountryUseCase.execute(code)) }
         }
     }
+
+
+    fun dismissCountryDialog(){
+
+        _state.update { it.copy(selectedCountry = null) }
+    }
 }
