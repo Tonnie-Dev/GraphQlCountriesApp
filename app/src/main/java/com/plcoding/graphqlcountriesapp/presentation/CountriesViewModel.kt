@@ -39,7 +39,8 @@ class CountriesViewModel @Inject constructor(
 
         viewModelScope.launch {
 
-            _state.update { it.copy(selectedCountry = getCountryUseCase.execute(code)) }
+            _state.value = _state.value.copy(selectedCountry = getCountryUseCase.execute(code))
+          //  _state.update { it.copy(selectedCountry = getCountryUseCase.execute(code)) }
         }
     }
 
